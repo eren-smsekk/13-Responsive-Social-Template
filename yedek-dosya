@@ -1,0 +1,76 @@
+<header id="home">
+    <div class="container-fluid h-100">
+        <div class="row position-relative h-100">
+                <div class="home__caption col-6 position-absolute">
+                    <h1>Discover <span class="fw-light">The Colorful World</span></h1>
+                    <p><i class="bi bi-arrow-right-short"></i> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci inventore iure tempore.</p>
+                    <p><i class="bi bi-arrow-right-short"></i> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci inventore iure tempore.</p>
+                    <p><i class="bi bi-arrow-right-short"></i> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci inventore iure tempore.</p>
+                </div>    
+
+
+            <div class="home__form col-6 position-absolute rounded-1">
+                <form class="d-flex flex-column">
+                    <div class="form-header text-center text-white">
+                        <h2>Join Us</h2>
+                        <p>Please fill out the form</p>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="email" name="email" id="email" placeholder="info@example.com" class="form-control">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="password" name="password" id="password" placeholder="******" class="form-control">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <textarea class="form-control" id="info" cols="30" rows="10" placeholder="Enter Info"></textarea>
+                            <label for="info">Enter Info</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <select id="cities" class="form-select">
+                            <option value="0" selected>Ankara</option>
+                            <option value="1">İzmir</option>
+                            <option value="2">İstanbul</option>
+                        </select>
+                        <label for="cities">Choose City</label>
+                    </div>
+                    <button class="btn btn-outline-light">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+#home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+           
+    .home__caption {
+        top: 22%;
+        left: 5%;
+        color: $white;
+         h1 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    
+
+    .home__form {
+        background-color: #3fc1c9;
+        width: 20%;
+        top: 22%;
+        right: 12%;
+        padding: 1rem;
+    }
+}
